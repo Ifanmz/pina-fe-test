@@ -1,11 +1,11 @@
 import React from "react"
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const SideNavigator = () => {
+const Navigator = () => {
     return(
         <>
-            <nav>
-                <ul>
+            <div>
+                <ul style={{justifyContent:'space-between'}}>
                     <li>
                         <Link to="/">Home</Link>
                     </li>
@@ -13,10 +13,9 @@ const SideNavigator = () => {
                         <Link to="/about">About</Link>
                     </li>
                 </ul>
-            </nav>
-            <Outlet />
+            </div>
         </>
     )
 }
 
-export default SideNavigator
+export default Navigator

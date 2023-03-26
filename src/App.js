@@ -3,13 +3,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import './App.css'
 import Home from './pages/home'
 import About from './pages/about'
-import SideNavigator from './components/side-nagivator'
+import SideNavigatorContainer from './components/side-nagivator-container'
 
 export default function App () {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<SideNavigator/>}>
+        <Route path="/" element={<SideNavigatorContainer/>}>
           <Route index element={<Home />}/>
           <Route path="about" element={<About/>}/>
         </Route>
